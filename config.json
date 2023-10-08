@@ -1,0 +1,5 @@
+{
+  "serverAddress": "127.0.0.1",
+  "serverPort": 8000,
+  "serverDirectory": "./web"
+}

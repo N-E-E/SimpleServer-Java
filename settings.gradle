@@ -1,0 +1,3 @@
+rootProject.name = 'SimpleServer-Java'
+include 'src'
+
