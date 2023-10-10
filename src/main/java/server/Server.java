@@ -111,6 +111,18 @@ public class Server {
         }
     }
 
+//    private static void sendFile(File file, Socket connectToClient) {
+//        try (BufferedInputStream fileStream = new BufferedInputStream(new FileInputStream(file))) {
+//            byte[] buffer = new byte[1024];
+//            int bytesRead;
+//            while ((bytesRead = fileStream.read(buffer)) != -1) {
+//                connectToClient.getOutputStream().write(buffer, 0, bytesRead);
+//            }
+//        } catch (IOException e) {
+//            e.printStackTrace();
+//        }
+//    }
+
     private static String getContentType(String fileName) {
         if (fileName.endsWith(".html")) {
             return "text/html";
