@@ -118,8 +118,12 @@ public class Server {
             return "image/jpeg";
         } else if (fileName.endsWith(".ico")) {
             return "image/x-icon";
+        } else if (fileName.endsWith(".mp4")) {
+            return "video/mp4";
+        } else if (fileName.endsWith(".mkv")) {
+            return "video/x-matroska"; // MIME类型为MKV
         } else {
-            // return binary stream in default
+            // 默认返回二进制流类型
             return "application/octet-stream";
         }
     }
